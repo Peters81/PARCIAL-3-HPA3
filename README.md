@@ -80,6 +80,9 @@ Este proyecto permite representar los datos del objeto en un formato de intercam
 ![Resultado del problema 2 en consola](capturas/problema2_json.png)
 
 ## Problema 3: Login con BCrypt y MySQL
+| Usuario de prueba | Contraseña |
+|---|---|
+| `cristell` | `Cristell123*` |
 
 ### 🩷 Diseño de la aplicación
 
@@ -130,54 +133,7 @@ Se utiliza **MySqlConnector**. El método `CrearCadena()` de `AccesoDatos.cs` le
 
 Las consultas utilizan parámetros. La contraseña de conexión a MySQL es independiente de la cuenta que se escribe en el formulario del login.
 
-## Archivos principales
 
-| Proyecto | Archivos | Contenido |
-|---|---|---|
-| Problema 1 | `Figura.cs`, `Rectangulo.cs`, `Cuadrado.cs`, `Triangulo.cs`, `Program.cs` | Jerarquía de figuras, fórmulas y recorrido del arreglo. |
-| Problema 2 | `Program.cs` y archivo del proyecto | Objeto persona, serialización y referencia a Newtonsoft.Json. |
-| Problema 3 | `Form1.cs`, `Form1.Designer.cs`, `Form1.resx` | Interfaz del login y sus eventos. |
-| Problema 3 | `AccesoDatos.cs`, `conexion.json` | Conexión, generación del hash, autenticación y registro de intentos. |
-| Problema 3 | `BaseDatos/backup_login_bcrypt.sql`, `BaseDatos/consultas.sql` | Estructura de la base, usuario inicial y consultas. |
-
-## Instalación y ejecución
-
-### Problema 1
-
-1. Abrir su solución en Visual Studio.
-2. Ejecutar con **Ctrl + F5**.
-3. Revisar el nombre, área y perímetro de las tres figuras en consola.
-
-### Problema 2
-
-1. Abrir su proyecto en Visual Studio.
-2. Restaurar el paquete NuGet **Newtonsoft.Json**.
-3. Ejecutar con **Ctrl + F5** y revisar la salida JSON.
-
-### Problema 3
-
-1. Tener MySQL, Visual Studio con desarrollo de escritorio .NET y el SDK de .NET 10.
-2. Iniciar el servidor MySQL.
-3. Ejecutar `BaseDatos/backup_login_bcrypt.sql` en Workbench si todavía no se ha creado la base. Si ya se ejecutó correctamente, continuar al siguiente paso.
-4. Configurar `conexion.json` con los datos de conexión de la computadora.
-5. Abrir `LoginBCrypt.slnx` y restaurar los paquetes NuGet.
-6. Ejecutar con **Ctrl + F5**.
-
-| Usuario de prueba | Contraseña |
-|---|---|
-| `cristell` | `Cristell123*` |
-
-Antes de publicar el proyecto, retirar la contraseña personal de MySQL de `conexion.json`.
-
-## Comprobación de los ejercicios
-
-| Problema | Comprobación | Resultado esperado |
-|---|---|---|
-| 1 | Ejecutar el recorrido del arreglo | Muestra las tres figuras con sus áreas y perímetros. |
-| 2 | Ejecutar la serialización | Muestra nombre, edad y carrera en formato JSON. |
-| 3 | Ingresar las credenciales correctas | Muestra el nombre y registra un acceso exitoso. |
-| 3 | Ingresar una contraseña incorrecta o un usuario inexistente | Rechaza el acceso y registra un intento fallido. |
-| 3 | Consultar `IntentosAcceso` en Workbench | Muestra el usuario, fecha, hora y resultado de los intentos realizados. |
 
 ## Backup de la base de datos
 
