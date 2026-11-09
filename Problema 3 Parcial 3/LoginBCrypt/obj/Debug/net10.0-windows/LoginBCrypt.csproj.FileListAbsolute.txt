@@ -22,3 +22,28 @@ C:\Users\niomu\Downloads\LoginBCrypt_Entrega\LoginBCrypt_Entrega\LoginBCrypt\obj
 C:\Users\niomu\Downloads\LoginBCrypt_Entrega\LoginBCrypt_Entrega\LoginBCrypt\obj\Debug\net10.0-windows\LoginBCrypt.pdb
 C:\Users\niomu\Downloads\LoginBCrypt_Entrega\LoginBCrypt_Entrega\LoginBCrypt\obj\Debug\net10.0-windows\LoginBCrypt.genruntimeconfig.cache
 C:\Users\niomu\Downloads\LoginBCrypt_Entrega\LoginBCrypt_Entrega\LoginBCrypt\obj\Debug\net10.0-windows\ref\LoginBCrypt.dll
+C:\Users\niomu\OneDrive - Universidad Tecnológica de Panamá\Documentos\GitHub\PARCIAL-3-HPA3\Problema 3 Parcial 3\LoginBCrypt\bin\Debug\net10.0-windows\conexion.json
+C:\Users\niomu\OneDrive - Universidad Tecnológica de Panamá\Documentos\GitHub\PARCIAL-3-HPA3\Problema 3 Parcial 3\LoginBCrypt\bin\Debug\net10.0-windows\LoginBCrypt.exe
+C:\Users\niomu\OneDrive - Universidad Tecnológica de Panamá\Documentos\GitHub\PARCIAL-3-HPA3\Problema 3 Parcial 3\LoginBCrypt\bin\Debug\net10.0-windows\LoginBCrypt.deps.json
+C:\Users\niomu\OneDrive - Universidad Tecnológica de Panamá\Documentos\GitHub\PARCIAL-3-HPA3\Problema 3 Parcial 3\LoginBCrypt\bin\Debug\net10.0-windows\LoginBCrypt.runtimeconfig.json
+C:\Users\niomu\OneDrive - Universidad Tecnológica de Panamá\Documentos\GitHub\PARCIAL-3-HPA3\Problema 3 Parcial 3\LoginBCrypt\bin\Debug\net10.0-windows\LoginBCrypt.dll
+C:\Users\niomu\OneDrive - Universidad Tecnológica de Panamá\Documentos\GitHub\PARCIAL-3-HPA3\Problema 3 Parcial 3\LoginBCrypt\bin\Debug\net10.0-windows\LoginBCrypt.pdb
+C:\Users\niomu\OneDrive - Universidad Tecnológica de Panamá\Documentos\GitHub\PARCIAL-3-HPA3\Problema 3 Parcial 3\LoginBCrypt\bin\Debug\net10.0-windows\BCrypt-Net-Next.dll
+C:\Users\niomu\OneDrive - Universidad Tecnológica de Panamá\Documentos\GitHub\PARCIAL-3-HPA3\Problema 3 Parcial 3\LoginBCrypt\bin\Debug\net10.0-windows\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\niomu\OneDrive - Universidad Tecnológica de Panamá\Documentos\GitHub\PARCIAL-3-HPA3\Problema 3 Parcial 3\LoginBCrypt\bin\Debug\net10.0-windows\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\niomu\OneDrive - Universidad Tecnológica de Panamá\Documentos\GitHub\PARCIAL-3-HPA3\Problema 3 Parcial 3\LoginBCrypt\bin\Debug\net10.0-windows\MySqlConnector.dll
+C:\Users\niomu\OneDrive - Universidad Tecnológica de Panamá\Documentos\GitHub\PARCIAL-3-HPA3\Problema 3 Parcial 3\LoginBCrypt\obj\Debug\net10.0-windows\LoginBCrypt.csproj.AssemblyReference.cache
+C:\Users\niomu\OneDrive - Universidad Tecnológica de Panamá\Documentos\GitHub\PARCIAL-3-HPA3\Problema 3 Parcial 3\LoginBCrypt\obj\Debug\net10.0-windows\LoginBCrypt.Form1.resources
+C:\Users\niomu\OneDrive - Universidad Tecnológica de Panamá\Documentos\GitHub\PARCIAL-3-HPA3\Problema 3 Parcial 3\LoginBCrypt\obj\Debug\net10.0-windows\LoginBCrypt.Properties.Resources.resources
+C:\Users\niomu\OneDrive - Universidad Tecnológica de Panamá\Documentos\GitHub\PARCIAL-3-HPA3\Problema 3 Parcial 3\LoginBCrypt\obj\Debug\net10.0-windows\LoginBCrypt.csproj.GenerateResource.cache
+C:\Users\niomu\OneDrive - Universidad Tecnológica de Panamá\Documentos\GitHub\PARCIAL-3-HPA3\Problema 3 Parcial 3\LoginBCrypt\obj\Debug\net10.0-windows\LoginBCrypt.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\niomu\OneDrive - Universidad Tecnológica de Panamá\Documentos\GitHub\PARCIAL-3-HPA3\Problema 3 Parcial 3\LoginBCrypt\obj\Debug\net10.0-windows\LoginBCrypt.AssemblyInfoInputs.cache
+C:\Users\niomu\OneDrive - Universidad Tecnológica de Panamá\Documentos\GitHub\PARCIAL-3-HPA3\Problema 3 Parcial 3\LoginBCrypt\obj\Debug\net10.0-windows\LoginBCrypt.AssemblyInfo.cs
+C:\Users\niomu\OneDrive - Universidad Tecnológica de Panamá\Documentos\GitHub\PARCIAL-3-HPA3\Problema 3 Parcial 3\LoginBCrypt\obj\Debug\net10.0-windows\LoginBCrypt.csproj.CoreCompileInputs.cache
+C:\Users\niomu\OneDrive - Universidad Tecnológica de Panamá\Documentos\GitHub\PARCIAL-3-HPA3\Problema 3 Parcial 3\LoginBCrypt\obj\Debug\net10.0-windows\LoginBCrypt.sourcelink.json
+C:\Users\niomu\OneDrive - Universidad Tecnológica de Panamá\Documentos\GitHub\PARCIAL-3-HPA3\Problema 3 Parcial 3\LoginBCrypt\obj\Debug\net10.0-windows\LoginBCr.F1EF3BAF.Up2Date
+C:\Users\niomu\OneDrive - Universidad Tecnológica de Panamá\Documentos\GitHub\PARCIAL-3-HPA3\Problema 3 Parcial 3\LoginBCrypt\obj\Debug\net10.0-windows\LoginBCrypt.dll
+C:\Users\niomu\OneDrive - Universidad Tecnológica de Panamá\Documentos\GitHub\PARCIAL-3-HPA3\Problema 3 Parcial 3\LoginBCrypt\obj\Debug\net10.0-windows\refint\LoginBCrypt.dll
+C:\Users\niomu\OneDrive - Universidad Tecnológica de Panamá\Documentos\GitHub\PARCIAL-3-HPA3\Problema 3 Parcial 3\LoginBCrypt\obj\Debug\net10.0-windows\LoginBCrypt.pdb
+C:\Users\niomu\OneDrive - Universidad Tecnológica de Panamá\Documentos\GitHub\PARCIAL-3-HPA3\Problema 3 Parcial 3\LoginBCrypt\obj\Debug\net10.0-windows\LoginBCrypt.genruntimeconfig.cache
+C:\Users\niomu\OneDrive - Universidad Tecnológica de Panamá\Documentos\GitHub\PARCIAL-3-HPA3\Problema 3 Parcial 3\LoginBCrypt\obj\Debug\net10.0-windows\ref\LoginBCrypt.dll

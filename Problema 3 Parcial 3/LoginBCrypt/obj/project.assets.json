@@ -240,11 +240,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\niomu\\Downloads\\LoginBCrypt_Entrega\\LoginBCrypt_Entrega\\LoginBCrypt\\LoginBCrypt.csproj",
+      "projectUniqueName": "C:\\Users\\niomu\\OneDrive - Universidad Tecnológica de Panamá\\Documentos\\GitHub\\PARCIAL-3-HPA3\\Problema 3 Parcial 3\\LoginBCrypt\\LoginBCrypt.csproj",
       "projectName": "LoginBCrypt",
-      "projectPath": "C:\\Users\\niomu\\Downloads\\LoginBCrypt_Entrega\\LoginBCrypt_Entrega\\LoginBCrypt\\LoginBCrypt.csproj",
+      "projectPath": "C:\\Users\\niomu\\OneDrive - Universidad Tecnológica de Panamá\\Documentos\\GitHub\\PARCIAL-3-HPA3\\Problema 3 Parcial 3\\LoginBCrypt\\LoginBCrypt.csproj",
       "packagesPath": "C:\\Users\\niomu\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\niomu\\Downloads\\LoginBCrypt_Entrega\\LoginBCrypt_Entrega\\LoginBCrypt\\obj\\",
+      "outputPath": "C:\\Users\\niomu\\OneDrive - Universidad Tecnológica de Panamá\\Documentos\\GitHub\\PARCIAL-3-HPA3\\Problema 3 Parcial 3\\LoginBCrypt\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\niomu\\AppData\\Roaming\\NuGet\\NuGet.Config",

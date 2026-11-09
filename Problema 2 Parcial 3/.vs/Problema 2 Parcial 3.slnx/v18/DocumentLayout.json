@@ -1,10 +1,10 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\niomu\\Desktop\\PARCIAL 3 HPA\\Problema 2 Parcial 3\\",
+  "WorkspaceRootPath": "C:\\Users\\niomu\\OneDrive - Universidad Tecnol\u00F3gica de Panam\u00E1\\Documentos\\GitHub\\PARCIAL-3-HPA3\\Problema 2 Parcial 3\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{00643F5E-9C34-473D-9710-5FD314F5B4EB}|Problema 2 Parcial 3\\Problema 2 Parcial 3.csproj|c:\\users\\niomu\\desktop\\parcial 3 hpa\\problema 2 parcial 3\\problema 2 parcial 3\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{00643F5E-9C34-473D-9710-5FD314F5B4EB}|Problema 2 Parcial 3\\Problema 2 Parcial 3.csproj|solutionrelative:problema 2 parcial 3\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{122333C0-9470-AE1A-EFD7-76CCDE9637D5}|Problema 2 Parcial 3\\Problema 2 Parcial 3.csproj|c:\\users\\niomu\\onedrive - universidad tecnol\u00F3gica de panam\u00E1\\documentos\\github\\parcial-3-hpa3\\problema 2 parcial 3\\problema 2 parcial 3\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{122333C0-9470-AE1A-EFD7-76CCDE9637D5}|Problema 2 Parcial 3\\Problema 2 Parcial 3.csproj|solutionrelative:problema 2 parcial 3\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -20,10 +20,10 @@
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\niomu\\Desktop\\PARCIAL 3 HPA\\Problema 2 Parcial 3\\Problema 2 Parcial 3\\Program.cs",
+              "DocumentMoniker": "C:\\Users\\niomu\\OneDrive - Universidad Tecnol\u00F3gica de Panam\u00E1\\Documentos\\GitHub\\PARCIAL-3-HPA3\\Problema 2 Parcial 3\\Problema 2 Parcial 3\\Program.cs",
               "RelativeDocumentMoniker": "Problema 2 Parcial 3\\Program.cs",
-              "ToolTip": "C:\\Users\\niomu\\Desktop\\PARCIAL 3 HPA\\Problema 2 Parcial 3\\Problema 2 Parcial 3\\Program.cs*",
-              "RelativeToolTip": "Problema 2 Parcial 3\\Program.cs*",
+              "ToolTip": "C:\\Users\\niomu\\OneDrive - Universidad Tecnol\u00F3gica de Panam\u00E1\\Documentos\\GitHub\\PARCIAL-3-HPA3\\Problema 2 Parcial 3\\Problema 2 Parcial 3\\Program.cs",
+              "RelativeToolTip": "Problema 2 Parcial 3\\Program.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-11-09T15:35:33.67Z",

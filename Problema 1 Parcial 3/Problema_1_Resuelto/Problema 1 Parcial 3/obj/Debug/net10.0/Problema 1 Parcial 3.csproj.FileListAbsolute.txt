@@ -13,3 +13,19 @@ C:\Users\niomu\Desktop\PARCIAL 3 HPA\Problema_1_Parcial_3_Resuelto\Problema_1_Re
 C:\Users\niomu\Desktop\PARCIAL 3 HPA\Problema_1_Parcial_3_Resuelto\Problema_1_Resuelto\Problema 1 Parcial 3\obj\Debug\net10.0\Problema 1 Parcial 3.genruntimeconfig.cache
 C:\Users\niomu\Desktop\PARCIAL 3 HPA\Problema_1_Parcial_3_Resuelto\Problema_1_Resuelto\Problema 1 Parcial 3\obj\Debug\net10.0\ref\Problema 1 Parcial 3.dll
 C:\Users\niomu\Desktop\PARCIAL 3 HPA\Problema_1_Parcial_3_Resuelto\Problema_1_Resuelto\Problema 1 Parcial 3\obj\Debug\net10.0\Problema.B3E67CF6.Up2Date
+C:\Users\niomu\OneDrive - Universidad Tecnológica de Panamá\Documentos\GitHub\PARCIAL-3-HPA3\Problema 1 Parcial 3\Problema_1_Resuelto\Problema 1 Parcial 3\bin\Debug\net10.0\Problema 1 Parcial 3.exe
+C:\Users\niomu\OneDrive - Universidad Tecnológica de Panamá\Documentos\GitHub\PARCIAL-3-HPA3\Problema 1 Parcial 3\Problema_1_Resuelto\Problema 1 Parcial 3\bin\Debug\net10.0\Problema 1 Parcial 3.deps.json
+C:\Users\niomu\OneDrive - Universidad Tecnológica de Panamá\Documentos\GitHub\PARCIAL-3-HPA3\Problema 1 Parcial 3\Problema_1_Resuelto\Problema 1 Parcial 3\bin\Debug\net10.0\Problema 1 Parcial 3.runtimeconfig.json
+C:\Users\niomu\OneDrive - Universidad Tecnológica de Panamá\Documentos\GitHub\PARCIAL-3-HPA3\Problema 1 Parcial 3\Problema_1_Resuelto\Problema 1 Parcial 3\bin\Debug\net10.0\Problema 1 Parcial 3.dll
+C:\Users\niomu\OneDrive - Universidad Tecnológica de Panamá\Documentos\GitHub\PARCIAL-3-HPA3\Problema 1 Parcial 3\Problema_1_Resuelto\Problema 1 Parcial 3\bin\Debug\net10.0\Problema 1 Parcial 3.pdb
+C:\Users\niomu\OneDrive - Universidad Tecnológica de Panamá\Documentos\GitHub\PARCIAL-3-HPA3\Problema 1 Parcial 3\Problema_1_Resuelto\Problema 1 Parcial 3\obj\Debug\net10.0\Problema 1 Parcial 3.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\niomu\OneDrive - Universidad Tecnológica de Panamá\Documentos\GitHub\PARCIAL-3-HPA3\Problema 1 Parcial 3\Problema_1_Resuelto\Problema 1 Parcial 3\obj\Debug\net10.0\Problema 1 Parcial 3.AssemblyInfoInputs.cache
+C:\Users\niomu\OneDrive - Universidad Tecnológica de Panamá\Documentos\GitHub\PARCIAL-3-HPA3\Problema 1 Parcial 3\Problema_1_Resuelto\Problema 1 Parcial 3\obj\Debug\net10.0\Problema 1 Parcial 3.AssemblyInfo.cs
+C:\Users\niomu\OneDrive - Universidad Tecnológica de Panamá\Documentos\GitHub\PARCIAL-3-HPA3\Problema 1 Parcial 3\Problema_1_Resuelto\Problema 1 Parcial 3\obj\Debug\net10.0\Problema 1 Parcial 3.csproj.CoreCompileInputs.cache
+C:\Users\niomu\OneDrive - Universidad Tecnológica de Panamá\Documentos\GitHub\PARCIAL-3-HPA3\Problema 1 Parcial 3\Problema_1_Resuelto\Problema 1 Parcial 3\obj\Debug\net10.0\Problema 1 Parcial 3.sourcelink.json
+C:\Users\niomu\OneDrive - Universidad Tecnológica de Panamá\Documentos\GitHub\PARCIAL-3-HPA3\Problema 1 Parcial 3\Problema_1_Resuelto\Problema 1 Parcial 3\obj\Debug\net10.0\Problema 1 Parcial 3.dll
+C:\Users\niomu\OneDrive - Universidad Tecnológica de Panamá\Documentos\GitHub\PARCIAL-3-HPA3\Problema 1 Parcial 3\Problema_1_Resuelto\Problema 1 Parcial 3\obj\Debug\net10.0\refint\Problema 1 Parcial 3.dll
+C:\Users\niomu\OneDrive - Universidad Tecnológica de Panamá\Documentos\GitHub\PARCIAL-3-HPA3\Problema 1 Parcial 3\Problema_1_Resuelto\Problema 1 Parcial 3\obj\Debug\net10.0\Problema 1 Parcial 3.pdb
+C:\Users\niomu\OneDrive - Universidad Tecnológica de Panamá\Documentos\GitHub\PARCIAL-3-HPA3\Problema 1 Parcial 3\Problema_1_Resuelto\Problema 1 Parcial 3\obj\Debug\net10.0\Problema 1 Parcial 3.genruntimeconfig.cache
+C:\Users\niomu\OneDrive - Universidad Tecnológica de Panamá\Documentos\GitHub\PARCIAL-3-HPA3\Problema 1 Parcial 3\Problema_1_Resuelto\Problema 1 Parcial 3\obj\Debug\net10.0\ref\Problema 1 Parcial 3.dll
+C:\Users\niomu\OneDrive - Universidad Tecnológica de Panamá\Documentos\GitHub\PARCIAL-3-HPA3\Problema 1 Parcial 3\Problema_1_Resuelto\Problema 1 Parcial 3\obj\Debug\net10.0\Problema.B3E67CF6.Up2Date

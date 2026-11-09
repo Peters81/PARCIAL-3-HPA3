@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("LoginBCrypt")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f96a152f138516dae846d2e191c52a8db4773b2b")]
 [assembly: System.Reflection.AssemblyProductAttribute("LoginBCrypt")]
 [assembly: System.Reflection.AssemblyTitleAttribute("LoginBCrypt")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

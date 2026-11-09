@@ -1,13 +1,13 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\niomu\\Downloads\\LoginBCrypt_Entrega\\LoginBCrypt_Entrega\\",
+  "WorkspaceRootPath": "C:\\Users\\niomu\\OneDrive - Universidad Tecnol\u00F3gica de Panam\u00E1\\Documentos\\GitHub\\PARCIAL-3-HPA3\\Problema 3 Parcial 3\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{4CC51735-E52D-ABC8-6354-AF2A37BB71EE}|LoginBCrypt\\LoginBCrypt.csproj|c:\\users\\niomu\\downloads\\loginbcrypt_entrega\\loginbcrypt_entrega\\loginbcrypt\\accesodatos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{4CC51735-E52D-ABC8-6354-AF2A37BB71EE}|LoginBCrypt\\LoginBCrypt.csproj|c:\\users\\niomu\\onedrive - universidad tecnol\u00F3gica de panam\u00E1\\documentos\\github\\parcial-3-hpa3\\problema 3 parcial 3\\loginbcrypt\\accesodatos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4CC51735-E52D-ABC8-6354-AF2A37BB71EE}|LoginBCrypt\\LoginBCrypt.csproj|solutionrelative:loginbcrypt\\accesodatos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4CC51735-E52D-ABC8-6354-AF2A37BB71EE}|LoginBCrypt\\LoginBCrypt.csproj|c:\\users\\niomu\\downloads\\loginbcrypt_entrega\\loginbcrypt_entrega\\loginbcrypt\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{4CC51735-E52D-ABC8-6354-AF2A37BB71EE}|LoginBCrypt\\LoginBCrypt.csproj|c:\\users\\niomu\\onedrive - universidad tecnol\u00F3gica de panam\u00E1\\documentos\\github\\parcial-3-hpa3\\problema 3 parcial 3\\loginbcrypt\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4CC51735-E52D-ABC8-6354-AF2A37BB71EE}|LoginBCrypt\\LoginBCrypt.csproj|solutionrelative:loginbcrypt\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -24,24 +24,23 @@
               "$type": "Document",
               "DocumentIndex": 1,
               "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\niomu\\Downloads\\LoginBCrypt_Entrega\\LoginBCrypt_Entrega\\LoginBCrypt\\Program.cs",
+              "DocumentMoniker": "C:\\Users\\niomu\\OneDrive - Universidad Tecnol\u00F3gica de Panam\u00E1\\Documentos\\GitHub\\PARCIAL-3-HPA3\\Problema 3 Parcial 3\\LoginBCrypt\\Program.cs",
               "RelativeDocumentMoniker": "LoginBCrypt\\Program.cs",
-              "ToolTip": "C:\\Users\\niomu\\Downloads\\LoginBCrypt_Entrega\\LoginBCrypt_Entrega\\LoginBCrypt\\Program.cs",
+              "ToolTip": "C:\\Users\\niomu\\OneDrive - Universidad Tecnol\u00F3gica de Panam\u00E1\\Documentos\\GitHub\\PARCIAL-3-HPA3\\Problema 3 Parcial 3\\LoginBCrypt\\Program.cs",
               "RelativeToolTip": "LoginBCrypt\\Program.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-11-09T16:20:53.388Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-11-09T16:20:53.388Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "AccesoDatos.cs",
-              "DocumentMoniker": "C:\\Users\\niomu\\Downloads\\LoginBCrypt_Entrega\\LoginBCrypt_Entrega\\LoginBCrypt\\AccesoDatos.cs",
+              "DocumentMoniker": "C:\\Users\\niomu\\OneDrive - Universidad Tecnol\u00F3gica de Panam\u00E1\\Documentos\\GitHub\\PARCIAL-3-HPA3\\Problema 3 Parcial 3\\LoginBCrypt\\AccesoDatos.cs",
               "RelativeDocumentMoniker": "LoginBCrypt\\AccesoDatos.cs",
-              "ToolTip": "C:\\Users\\niomu\\Downloads\\LoginBCrypt_Entrega\\LoginBCrypt_Entrega\\LoginBCrypt\\AccesoDatos.cs",
+              "ToolTip": "C:\\Users\\niomu\\OneDrive - Universidad Tecnol\u00F3gica de Panam\u00E1\\Documentos\\GitHub\\PARCIAL-3-HPA3\\Problema 3 Parcial 3\\LoginBCrypt\\AccesoDatos.cs",
               "RelativeToolTip": "LoginBCrypt\\AccesoDatos.cs",
-              "ViewState": "AgIAAB8AAAAAAAAAAAAUwAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-11-09T16:20:51.16Z",
               "EditorCaption": ""

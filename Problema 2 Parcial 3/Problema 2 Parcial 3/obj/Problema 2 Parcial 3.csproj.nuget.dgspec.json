@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\niomu\\Desktop\\PARCIAL 3 HPA\\Problema 2 Parcial 3\\Problema 2 Parcial 3\\Problema 2 Parcial 3.csproj": {}
+    "C:\\Users\\niomu\\OneDrive - Universidad Tecnológica de Panamá\\Documentos\\GitHub\\PARCIAL-3-HPA3\\Problema 2 Parcial 3\\Problema 2 Parcial 3\\Problema 2 Parcial 3.csproj": {}
   },
   "projects": {
-    "C:\\Users\\niomu\\Desktop\\PARCIAL 3 HPA\\Problema 2 Parcial 3\\Problema 2 Parcial 3\\Problema 2 Parcial 3.csproj": {
+    "C:\\Users\\niomu\\OneDrive - Universidad Tecnológica de Panamá\\Documentos\\GitHub\\PARCIAL-3-HPA3\\Problema 2 Parcial 3\\Problema 2 Parcial 3\\Problema 2 Parcial 3.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\niomu\\Desktop\\PARCIAL 3 HPA\\Problema 2 Parcial 3\\Problema 2 Parcial 3\\Problema 2 Parcial 3.csproj",
+        "projectUniqueName": "C:\\Users\\niomu\\OneDrive - Universidad Tecnológica de Panamá\\Documentos\\GitHub\\PARCIAL-3-HPA3\\Problema 2 Parcial 3\\Problema 2 Parcial 3\\Problema 2 Parcial 3.csproj",
         "projectName": "Problema 2 Parcial 3",
-        "projectPath": "C:\\Users\\niomu\\Desktop\\PARCIAL 3 HPA\\Problema 2 Parcial 3\\Problema 2 Parcial 3\\Problema 2 Parcial 3.csproj",
+        "projectPath": "C:\\Users\\niomu\\OneDrive - Universidad Tecnológica de Panamá\\Documentos\\GitHub\\PARCIAL-3-HPA3\\Problema 2 Parcial 3\\Problema 2 Parcial 3\\Problema 2 Parcial 3.csproj",
         "packagesPath": "C:\\Users\\niomu\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\niomu\\Desktop\\PARCIAL 3 HPA\\Problema 2 Parcial 3\\Problema 2 Parcial 3\\obj\\",
+        "outputPath": "C:\\Users\\niomu\\OneDrive - Universidad Tecnológica de Panamá\\Documentos\\GitHub\\PARCIAL-3-HPA3\\Problema 2 Parcial 3\\Problema 2 Parcial 3\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\niomu\\AppData\\Roaming\\NuGet\\NuGet.Config",
