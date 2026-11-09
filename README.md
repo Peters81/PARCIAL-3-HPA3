@@ -1,4 +1,4 @@
-# Parcial #3 Práctico - Login con BCrypt
+# Parcial #3 Práctico - C# y .NET
 
 ## Información del parcial
 
@@ -7,7 +7,7 @@
 | Universidad | Universidad Tecnológica de Panamá |
 | Facultad | Facultad de Ingeniería de Sistemas Computacionales |
 | Curso | Herramientas de la Programación Aplicada III (.NET) |
-| Evaluación | Parcial #3 - Problema 3 |
+| Evaluación | Parcial #3 Práctico |
 | Estudiante | Cristell Peters |
 | Grupo | 1IL133 |
 | Docente | Ing. Irina Fong |
@@ -15,171 +15,190 @@
 
 ## Objetivos
 
-🩷 Desarrollar un inicio de sesión en C# Windows Forms conectado a MySQL.
+🩷 Aplicar clases abstractas, herencia y polimorfismo mediante figuras geométricas.
 
-🩷 Utilizar BCrypt.Net-Next para generar y verificar hashes de contraseñas.
+🩷 Convertir los datos de un objeto a formato JSON utilizando Newtonsoft.Json.
 
-🩷 Registrar los intentos de acceso exitosos y fallidos con el usuario y la fecha.
+🩷 Desarrollar un login con BCrypt.Net-Next y una base de datos MySQL.
 
-🩷 Mostrar el nombre del usuario cuando las credenciales sean correctas.
+🩷 Registrar los intentos de acceso y mostrar el nombre del usuario al iniciar sesión correctamente.
 
 ## Contenido del parcial
 
-En el problema 3 se desarrolló un programa de inicio de sesión con **C# Windows Forms**, **MySQL** y la biblioteca **BCrypt.Net-Next**. El usuario escribe sus credenciales en el formulario y el programa consulta la cuenta en la base de datos para verificar su contraseña.
+El parcial está compuesto por **tres proyectos independientes en C#**. El primero utiliza una aplicación de consola para calcular áreas y perímetros mediante una jerarquía de clases. El segundo convierte los datos de una persona a JSON y muestra el resultado en consola. El tercero utiliza Windows Forms y MySQL para comprobar credenciales con BCrypt y guardar los intentos de inicio de sesión.
 
-La contraseña se almacena como un hash. Durante el acceso se utiliza `BCrypt.Verify()` para comprobar si el texto ingresado corresponde al hash guardado. También se registra el resultado de cada intento de autenticación para su consulta posterior.
+| Problema | Tema | Tipo de proyecto | Puntos |
+|---|---|---|---|
+| 1 | Clases abstractas, herencia y polimorfismo | Consola | 15 |
+| 2 | Serialización de objetos a JSON | Consola | 15 |
+| 3 | Login con BCrypt y registro de accesos | Windows Forms | 20 |
 
-## Diseño de la aplicación
+## Problema 1: Figuras geométricas
 
-Se utilizó un formulario con fondo azul claro, un panel central, una imagen, el título de inicio de sesión y los campos de usuario y contraseña. En la parte inferior están los botones **Iniciar sesión** y **Salir**.
+### 🩷 Trabajo realizado
 
-El diseño se conserva en `Form1.Designer.cs` y sus recursos en `Form1.resx`, por lo que puede abrirse desde el diseñador de Visual Studio.
+Se creó una clase abstracta llamada `Figura`, con los métodos abstractos `CalcularArea()` y `CalcularPerimetro()`. A partir de ella se implementaron `Rectangulo`, `Cuadrado` y `Triangulo`.
 
-![Formulario de inicio de sesión](docs/capturas/login.png)
+Cada clase hija recibe sus medidas mediante un constructor y utiliza `override` para implementar las fórmulas correspondientes.
 
-## Organización del proyecto
-
-| Archivo | Función |
-|---|---|
-| `Program.cs` | Inicia la aplicación y abre el formulario. |
-| `Form1.cs` | Recibe las credenciales, valida los campos y muestra el resultado. |
-| `Form1.Designer.cs` | Contiene los controles y la distribución del formulario. |
-| `Form1.resx` | Guarda los recursos del formulario. |
-| `AccesoDatos.cs` | Conecta con MySQL, prepara el usuario de prueba, verifica la contraseña y registra los intentos. |
-| `conexion.json` | Contiene los datos de conexión a MySQL. |
-| `BaseDatos/backup_login_bcrypt.sql` | Crea la base, las tablas y el usuario inicial con su hash. |
-| `BaseDatos/consultas.sql` | Consulta los usuarios y los intentos de acceso. |
-
-## Generación del hash con BCrypt
-
-En `AccesoDatos.cs`, el método `PrepararUsuarioAsync()` comprueba si existe el usuario de prueba `cristell`. Si no existe, genera el hash de su contraseña mediante:
-
-```csharp
-string hash = await Task.Run(() => BCrypt.Net.BCrypt.HashPassword("Cristell123*", workFactor: 12));
-```
-
-Después guarda el nombre, el usuario y el hash en la tabla `Usuarios`. Si la cuenta ya fue creada con el SQL, utiliza el registro existente y no modifica su contraseña.
-
-El campo `PasswordHash` almacena el resultado de BCrypt, en lugar de la contraseña original.
-
-![Usuario y hash almacenado en MySQL](docs/capturas/usuario_hash.png)
-
-## Verificación de la contraseña
-
-El método `AutenticarAsync()` busca el usuario mediante una consulta parametrizada y recupera su nombre y hash. Si encuentra la cuenta, comprueba la contraseña con:
-
-```csharp
-bool exitoso = hash != null && await Task.Run(() => BCrypt.Net.BCrypt.Verify(contrasena, hash));
-```
-
-El resultado permite aceptar o rechazar el acceso. El programa no necesita recuperar la contraseña original desde el hash.
-
-## Base de datos MySQL
-
-La base de datos se llama **`login_bcrypt`** y contiene dos tablas:
-
-| Tabla | Campos | Uso |
+| Clase | Área | Perímetro |
 |---|---|---|
-| `Usuarios` | `IdUsuario`, `Nombre`, `Usuario`, `PasswordHash` | Guarda la cuenta y el hash de su contraseña. |
-| `IntentosAcceso` | `IdIntento`, `IdUsuario`, `UsuarioIngresado`, `FechaHora`, `Exitoso` | Guarda los intentos de autenticación y sus resultados. |
+| `Rectangulo` | Base × altura | 2 × (base + altura) |
+| `Cuadrado` | Lado × lado | 4 × lado |
+| `Triangulo` | (Base × altura) / 2 | Suma de sus tres lados |
 
-La base y las tablas se crean ejecutando el SQL en **MySQL Workbench**. El código C# se conecta a esa estructura para consultar e insertar registros.
+### 🩷 Arreglo y recorrido polimórfico
 
-Cuando el usuario ingresado no existe, el intento conserva ese texto en `UsuarioIngresado` y registra `IdUsuario` como `NULL`.
+En `Program.cs` se declaró un arreglo unidimensional de tipo `Figura[]` con objetos de las tres clases. Mediante un `foreach`, el programa muestra el nombre de cada clase, su área y su perímetro.
 
-![Tablas de la base de datos](docs/capturas/base_datos.png)
+Aunque la variable del recorrido es de tipo `Figura`, se ejecutan los métodos de la clase concreta de cada objeto. De esta forma se aplica el polimorfismo solicitado.
 
-## Funcionalidades principales
+Las medidas están definidas en el código, ya que el enunciado no solicita ingresarlas por teclado.
 
-### 🩷 Inicio de sesión exitoso
+| Figura del ejemplo | Medidas | Área | Perímetro |
+|---|---|---|---|
+| Rectángulo | Base 8, altura 5 | 40 | 26 |
+| Cuadrado | Lado 4 | 16 | 16 |
+| Triángulo rectángulo | Base 3, altura 4; lados 3, 4 y 5 | 6 | 12 |
 
-Al presionar **Iniciar sesión**, se leen los campos y se solicita la autenticación. Si las credenciales son correctas, se registra el acceso y aparece un mensaje con el nombre obtenido de la base de datos, por ejemplo: **Bienvenido/a, Cristell.**
+![Resultado del problema 1 en consola](docs/capturas/problema1_figuras.png)
 
-![Acceso exitoso con el nombre del usuario](docs/capturas/acceso_exitoso.png)
+## Problema 2: Conversión de datos a JSON
 
-### 🩷 Acceso rechazado
+### 🩷 Trabajo realizado
 
-Si la contraseña es incorrecta o el usuario no existe, se registra un intento fallido y se muestra el mensaje **Usuario o contraseña incorrectos.**
+Se utiliza la biblioteca **Newtonsoft.Json** para convertir un objeto de C# a una cadena JSON. El objeto `persona` contiene los datos del ejemplo: nombre Cristell, edad 20 y carrera Ingeniería en Sistemas.
 
-![Mensaje de acceso rechazado](docs/capturas/acceso_fallido.png)
+La conversión se realiza con `JsonConvert.SerializeObject(persona)` y el resultado se muestra mediante `Console.WriteLine(json)`.
 
-### 🩷 Registro de intentos
+```json
+{"Nombre":"Cristell","Edad":20,"Carrera":"Ingenieria en Sistemas"}
+```
 
-Cada intento de autenticación guarda el usuario ingresado, la fecha y hora, y el resultado. El campo `Exitoso` utiliza `1` para un acceso correcto y `0` para uno fallido.
+Este proyecto permite representar los datos del objeto en un formato de intercambio. No requiere formulario ni base de datos.
 
-Los registros se pueden consultar desde Workbench mediante `BaseDatos/consultas.sql`.
+![Resultado del problema 2 en consola](docs/capturas/problema2_json.png)
 
-![Intentos exitosos y fallidos registrados](docs/capturas/intentos_acceso.png)
+## Problema 3: Login con BCrypt y MySQL
 
-### 🩷 Validación de campos
+### 🩷 Diseño de la aplicación
 
-Si falta el usuario o la contraseña, se solicita completar ambos datos antes de consultar las credenciales. El campo de contraseña oculta los caracteres escritos y el botón **Salir** cierra el formulario.
+Se desarrolló un formulario con una imagen, título, campos de usuario y contraseña, y los botones **Iniciar sesión** y **Salir**. Se utilizaron tonos azules y un panel central para agrupar los controles.
 
-![Validación de campos vacíos](docs/capturas/campos_vacios.png)
+El diseño se encuentra en `Form1.Designer.cs`, sus recursos en `Form1.resx` y los eventos en `Form1.cs`. La contraseña se muestra oculta al escribir.
 
-## Conexión entre C# y MySQL
+![Pantalla principal del login](docs/capturas/problema3_login.png)
 
-Se utiliza **MySqlConnector** para acceder a la base de datos. El método `CrearCadena()` obtiene los datos desde `conexion.json`.
+### 🩷 Generación del hash
 
-La contraseña del usuario de MySQL es independiente de la contraseña que se escribe en el formulario de acceso.
+En `AccesoDatos.cs`, el método `PrepararUsuarioAsync()` comprueba si existe el usuario de prueba `cristell`. Cuando no existe, genera el hash mediante `BCrypt.Net.BCrypt.HashPassword(...)` y guarda la cuenta en la tabla `Usuarios`.
+
+Si el usuario ya fue creado con el SQL, se conserva el registro y se utiliza su hash existente. La contraseña original no se almacena en el campo `PasswordHash`.
+
+### 🩷 Verificación y acceso exitoso
+
+El método `AutenticarAsync()` consulta el usuario y recupera su nombre y hash. Luego utiliza `BCrypt.Net.BCrypt.Verify(contrasena, hash)` para comprobar la contraseña ingresada.
+
+Si el resultado es correcto, se guarda el intento exitoso y el formulario muestra un mensaje con el nombre obtenido de la base de datos: **Bienvenido/a, Cristell.**
+
+![Inicio de sesión exitoso](docs/capturas/problema3_exitoso.png)
+
+### 🩷 Acceso fallido
+
+Si la contraseña es incorrecta o el usuario no existe, se guarda el intento fallido y aparece el mensaje **Usuario o contraseña incorrectos.**
+
+Cuando falta el usuario o la contraseña, se solicita completar los campos antes de consultar las credenciales.
+
+![Inicio de sesión fallido](docs/capturas/problema3_fallido.png)
+
+### 🩷 Base de datos y registro de intentos
+
+La base de datos se llama `login_bcrypt`. Su estructura se crea desde MySQL Workbench mediante `BaseDatos/backup_login_bcrypt.sql`.
+
+| Tabla | Campos | Función |
+|---|---|---|
+| `Usuarios` | `IdUsuario`, `Nombre`, `Usuario`, `PasswordHash` | Almacena las cuentas y los hashes. |
+| `IntentosAcceso` | `IdIntento`, `IdUsuario`, `UsuarioIngresado`, `FechaHora`, `Exitoso` | Almacena los intentos de autenticación. |
+
+El programa registra el usuario ingresado, la fecha y hora, y el resultado del acceso. `Exitoso` vale `1` para un intento correcto y `0` para uno fallido. Si la cuenta no existe, conserva el texto ingresado y guarda `IdUsuario` como `NULL`.
+
+Los registros se pueden revisar ejecutando `BaseDatos/consultas.sql`. La creación de la base y las tablas queda en el SQL; el código C# consulta e inserta los datos.
+
+### 🩷 Conexión con MySQL
+
+Se utiliza **MySqlConnector**. El método `CrearCadena()` de `AccesoDatos.cs` lee el servidor, puerto, usuario y contraseña de MySQL desde `conexion.json`.
+
+Las consultas utilizan parámetros. La contraseña de conexión a MySQL es independiente de la cuenta que se escribe en el formulario del login.
+
+## Archivos principales
+
+| Proyecto | Archivos | Contenido |
+|---|---|---|
+| Problema 1 | `Figura.cs`, `Rectangulo.cs`, `Cuadrado.cs`, `Triangulo.cs`, `Program.cs` | Jerarquía de figuras, fórmulas y recorrido del arreglo. |
+| Problema 2 | `Program.cs` y archivo del proyecto | Objeto persona, serialización y referencia a Newtonsoft.Json. |
+| Problema 3 | `Form1.cs`, `Form1.Designer.cs`, `Form1.resx` | Interfaz del login y sus eventos. |
+| Problema 3 | `AccesoDatos.cs`, `conexion.json` | Conexión, generación del hash, autenticación y registro de intentos. |
+| Problema 3 | `BaseDatos/backup_login_bcrypt.sql`, `BaseDatos/consultas.sql` | Estructura de la base, usuario inicial y consultas. |
 
 ## Instalación y ejecución
 
+### Problema 1
+
+1. Abrir su solución en Visual Studio.
+2. Ejecutar con **Ctrl + F5**.
+3. Revisar el nombre, área y perímetro de las tres figuras en consola.
+
+### Problema 2
+
+1. Abrir su proyecto en Visual Studio.
+2. Restaurar el paquete NuGet **Newtonsoft.Json**.
+3. Ejecutar con **Ctrl + F5** y revisar la salida JSON.
+
+### Problema 3
+
 1. Tener MySQL, Visual Studio con desarrollo de escritorio .NET y el SDK de .NET 10.
 2. Iniciar el servidor MySQL.
-3. Ejecutar `BaseDatos/backup_login_bcrypt.sql` en Workbench si la base todavía no está creada. Si ya se ejecutó correctamente, continuar al siguiente paso.
-4. Configurar `LoginBCrypt/conexion.json` con el servidor, puerto, usuario y contraseña de MySQL correspondientes a la computadora.
-5. Abrir `LoginBCrypt.slnx` en Visual Studio.
-6. Restaurar los paquetes NuGet y ejecutar con **Ctrl + F5**.
+3. Ejecutar `BaseDatos/backup_login_bcrypt.sql` en Workbench si todavía no se ha creado la base. Si ya se ejecutó correctamente, continuar al siguiente paso.
+4. Configurar `conexion.json` con los datos de conexión de la computadora.
+5. Abrir `LoginBCrypt.slnx` y restaurar los paquetes NuGet.
+6. Ejecutar con **Ctrl + F5**.
 
-Cuenta de prueba:
-
-| Usuario | Contraseña |
+| Usuario de prueba | Contraseña |
 |---|---|
 | `cristell` | `Cristell123*` |
 
 Antes de publicar el proyecto, retirar la contraseña personal de MySQL de `conexion.json`.
 
-## Comprobación del funcionamiento
+## Comprobación de los ejercicios
 
-| Prueba | Resultado esperado |
-|---|---|
-| Ingresar `cristell` con `Cristell123*` | Muestra el nombre y registra un acceso exitoso. |
-| Ingresar `cristell` con otra contraseña | Rechaza el acceso y registra un intento fallido. |
-| Ingresar un usuario inexistente | Rechaza el acceso y conserva el usuario ingresado en el registro. |
-| Dejar un campo vacío | Solicita completar los datos. |
-| Consultar `IntentosAcceso` | Muestra usuario, fecha, hora y resultado de los intentos realizados. |
+| Problema | Comprobación | Resultado esperado |
+|---|---|---|
+| 1 | Ejecutar el recorrido del arreglo | Muestra las tres figuras con sus áreas y perímetros. |
+| 2 | Ejecutar la serialización | Muestra nombre, edad y carrera en formato JSON. |
+| 3 | Ingresar las credenciales correctas | Muestra el nombre y registra un acceso exitoso. |
+| 3 | Ingresar una contraseña incorrecta o un usuario inexistente | Rechaza el acceso y registra un intento fallido. |
+| 3 | Consultar `IntentosAcceso` en Workbench | Muestra el usuario, fecha, hora y resultado de los intentos realizados. |
 
 ## Backup de la base de datos
 
-Se incluye `BaseDatos/backup_login_bcrypt.sql` con la estructura y el usuario inicial. Después de realizar las pruebas, se debe exportar desde Workbench la base `login_bcrypt` con **estructura y datos**, para incluir en la entrega los intentos registrados durante la ejecución.
+El problema 3 incluye un SQL con la estructura y el usuario inicial. Después de realizar las pruebas, se debe exportar desde Workbench la base `login_bcrypt` con **estructura y datos** para incluir también los intentos registrados.
 
-El repositorio debe contener el código del proyecto y el backup solicitado en el enunciado.
-
-## Controles utilizados
-
-| Control | Uso |
-|---|---|
-| `Form` | Ventana de inicio de sesión. |
-| `Panel` | Agrupa los controles del login. |
-| `PictureBox` | Muestra la imagen del formulario. |
-| `Label` | Presenta el título y los nombres de los campos. |
-| `TextBox` | Recibe usuario y contraseña. |
-| `Button` | Permite iniciar sesión o salir. |
-| `MessageBox` | Informa el resultado del acceso y las validaciones. |
+El repositorio reúne los tres proyectos y el backup de la base de datos solicitado para el login.
 
 ## Herramientas utilizadas
 
 | Herramienta | Uso |
 |---|---|
-| C# y .NET 10 | Desarrollo del programa. |
-| Windows Forms | Diseño de la interfaz. |
-| Visual Studio | Edición del código y del formulario. |
-| MySQL y MySQL Workbench | Almacenamiento y consulta de datos. |
-| BCrypt.Net-Next 4.2.0 | Generación y verificación de hashes. |
-| MySqlConnector 2.6.2 | Comunicación entre C# y MySQL. |
-| GitHub | Entrega del código y documentación. |
+| C# y .NET | Desarrollo de los tres programas. |
+| Visual Studio | Edición y ejecución de los proyectos. |
+| Consola | Presentación de los resultados de figuras y JSON. |
+| Windows Forms | Interfaz del login. |
+| Newtonsoft.Json | Serialización del objeto persona. |
+| BCrypt.Net-Next | Generación y verificación de hashes. |
+| MySqlConnector | Conexión del login a MySQL. |
+| MySQL y MySQL Workbench | Almacenamiento, consultas y respaldo de datos. |
+| GitHub | Organización y entrega del código y documentación. |
 
 ## Resultado del trabajo
 
-El proyecto reúne el inicio de sesión, el manejo de contraseñas con BCrypt y el registro de accesos en MySQL. Se trabajó con la consulta de usuarios, la verificación del hash y el almacenamiento de intentos exitosos y fallidos. El formulario informa el resultado y muestra el nombre cuando el acceso es correcto.
+En este parcial se trabajaron tres temas mediante proyectos separados. Con las figuras se aplicaron clases abstractas, herencia y polimorfismo; con el segundo ejercicio se representaron datos en JSON; y con el login se integraron BCrypt, Windows Forms y MySQL para verificar contraseñas y registrar los accesos.
