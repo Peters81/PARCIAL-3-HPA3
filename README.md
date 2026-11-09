@@ -61,7 +61,7 @@ Las medidas están definidas en el código, ya que el enunciado no solicita ingr
 | Cuadrado | Lado 4 | 16 | 16 |
 | Triángulo rectángulo | Base 3, altura 4; lados 3, 4 y 5 | 6 | 12 |
 
-![Resultado del problema 1 en consola](docs/capturas/problema1_figuras.png)
+![Resultado del problema 1 en consola](capturas/problema1_figuras.png)
 
 ## Problema 2: Conversión de datos a JSON
 
@@ -77,7 +77,7 @@ La conversión se realiza con `JsonConvert.SerializeObject(persona)` y el result
 
 Este proyecto permite representar los datos del objeto en un formato de intercambio. No requiere formulario ni base de datos.
 
-![Resultado del problema 2 en consola](docs/capturas/problema2_json.png)
+![Resultado del problema 2 en consola](capturas/problema2_json.png)
 
 ## Problema 3: Login con BCrypt y MySQL
 
@@ -87,7 +87,7 @@ Se desarrolló un formulario con una imagen, título, campos de usuario y contra
 
 El diseño se encuentra en `Form1.Designer.cs`, sus recursos en `Form1.resx` y los eventos en `Form1.cs`. La contraseña se muestra oculta al escribir.
 
-![Pantalla principal del login](docs/capturas/problema3_login.png)
+![Pantalla principal del login](capturas/problema3_login.png)
 
 ### 🩷 Generación del hash
 
@@ -101,7 +101,7 @@ El método `AutenticarAsync()` consulta el usuario y recupera su nombre y hash. 
 
 Si el resultado es correcto, se guarda el intento exitoso y el formulario muestra un mensaje con el nombre obtenido de la base de datos: **Bienvenido/a, Cristell.**
 
-![Inicio de sesión exitoso](docs/capturas/problema3_exitoso.png)
+![Inicio de sesión exitoso](capturas/problema3_exitoso.png)
 
 ### 🩷 Acceso fallido
 
@@ -109,7 +109,7 @@ Si la contraseña es incorrecta o el usuario no existe, se guarda el intento fal
 
 Cuando falta el usuario o la contraseña, se solicita completar los campos antes de consultar las credenciales.
 
-![Inicio de sesión fallido](docs/capturas/problema3_fallido.png)
+![Inicio de sesión fallido](capturas/problema3_fallido.png)
 
 ### 🩷 Base de datos y registro de intentos
 
