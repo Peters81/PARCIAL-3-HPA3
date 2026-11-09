@@ -1,0 +1,6 @@
+{
+  "Servidor": "localhost",
+  "Puerto": 3306,
+  "Usuario": "root",
+  "Contrasena": "peters"
+}

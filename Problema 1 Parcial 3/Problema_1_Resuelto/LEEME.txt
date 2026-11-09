@@ -1,0 +1,23 @@
+﻿PROBLEMA 1 RESUELTO
+
+1. Extrae el ZIP completo.
+2. Abre "Problema 1 Parcial 3.slnx" en Visual Studio.
+3. Ejecuta con Ctrl + F5.
+
+Se conserva .NET 10, tal como estaba configurado tu proyecto original.
+
+CONTENIDO
+Figura.cs: clase abstracta y dos métodos abstractos.
+Rectangulo.cs, Cuadrado.cs y Triangulo.cs: clases derivadas con sus fórmulas.
+Program.cs: vector Figura[] y recorrido foreach polimórfico.
+
+RESULTADOS ESPERADOS
+Rectangulo: área 40 y perímetro 26.
+Cuadrado: área 16 y perímetro 16.
+Triangulo: área 6 y perímetro 12.
+
+El triángulo del ejemplo es rectángulo, con lados 3, 4 y 5.
+No necesitas instalar paquetes NuGet ni crear una base de datos.
+
+VERIFICACIÓN
+Se revisaron la estructura del proyecto y las fórmulas. En este entorno no hay un SDK de .NET instalado, por lo que no se pudo compilar ni ejecutar aquí.

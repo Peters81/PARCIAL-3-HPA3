@@ -1,0 +1,20 @@
+CREATE DATABASE IF NOT EXISTS login_bcrypt CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
+USE login_bcrypt;
+CREATE TABLE IF NOT EXISTS Usuarios (
+ IdUsuario INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+ Nombre VARCHAR(100) NOT NULL,
+ Usuario VARCHAR(100) NOT NULL UNIQUE,
+ PasswordHash VARCHAR(255) CHARACTER SET ascii COLLATE ascii_bin NOT NULL
+) ENGINE=InnoDB;
+CREATE TABLE IF NOT EXISTS IntentosAcceso (
+ IdIntento BIGINT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+ IdUsuario INT NULL,
+ UsuarioIngresado VARCHAR(100) NOT NULL,
+ FechaHora DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP,
+ Exitoso BOOLEAN NOT NULL,
+ CONSTRAINT FK_Intentos_Usuarios FOREIGN KEY (IdUsuario) REFERENCES Usuarios(IdUsuario),
+ INDEX IX_Intentos_Fecha (FechaHora)
+) ENGINE=InnoDB;
+INSERT INTO Usuarios (Nombre, Usuario, PasswordHash)
+SELECT 'Cristell', 'cristell', '$2b$12$bLzE9eVNA2Ufip6a6f0UYOOW1LDi8jS82du41NAOtwdLvIfC9Q81y'
+WHERE NOT EXISTS (SELECT 1 FROM Usuarios WHERE Usuario = 'cristell');

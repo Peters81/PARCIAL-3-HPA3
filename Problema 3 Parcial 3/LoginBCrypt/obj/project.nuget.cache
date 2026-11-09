@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "dgSpecHash": "iMpqvbgo+JE=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\niomu\\Downloads\\LoginBCrypt_Entrega\\LoginBCrypt_Entrega\\LoginBCrypt\\LoginBCrypt.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\niomu\\.nuget\\packages\\bcrypt.net-next\\4.2.0\\bcrypt.net-next.4.2.0.nupkg.sha512",
+    "C:\\Users\\niomu\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\8.0.2\\microsoft.extensions.dependencyinjection.abstractions.8.0.2.nupkg.sha512",
+    "C:\\Users\\niomu\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\8.0.2\\microsoft.extensions.logging.abstractions.8.0.2.nupkg.sha512",
+    "C:\\Users\\niomu\\.nuget\\packages\\mysqlconnector\\2.6.2\\mysqlconnector.2.6.2.nupkg.sha512"
+  ],
+  "logs": []
+}
